@@ -11,7 +11,7 @@ BUILD-MAKEFILE:
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
   tags:
-    - nport
+    - linux-g++
 
 
 BUILD-CMAKE:
@@ -26,4 +26,4 @@ BUILD-CMAKE:
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
   tags:
-    - nport
+    - linux-g++
