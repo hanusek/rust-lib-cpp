@@ -1,6 +1,8 @@
 *.lock
 Cargo.lock
 
+.idea
+
 /build
 /target
 rust_lib/target
