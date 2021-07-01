@@ -1,5 +1,16 @@
 stages:
+  - build_env
   - build
+
+BUILD-ENV:
+  stage: build_env
+  timeout: 7m
+  script:
+    - cargo install cbindgen
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  tags:
+    - linux-g++
 
 
 BUILD-MAKEFILE:
