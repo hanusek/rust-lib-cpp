@@ -1,0 +1,10 @@
+*.lock
+Cargo.lock
+
+/build
+/target
+rust_lib/target
+
+*.a
+*.d
+*.out

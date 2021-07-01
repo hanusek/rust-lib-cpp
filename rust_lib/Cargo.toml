@@ -1,0 +1,12 @@
+[package]
+name = "cpp-to-rust"
+version = "0.1.0"
+authors = ["timmonfette1 <monfette.timothy@gmail.com>"]
+
+[lib]
+name = "rust_lib"
+crate-type = ["staticlib"]
+
+[build-dependencies]
+cbindgen = "0.19.0"
+cmake = "0.1.45"

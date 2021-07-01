@@ -1,0 +1,29 @@
+stages:
+  - build
+
+
+BUILD-MAKEFILE:
+  stage: build
+  timeout: 7m
+  script:
+    - make
+    - make clean
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  tags:
+    - nport
+
+
+BUILD-CMAKE:
+  stage: build
+  timeout: 7m
+  script:
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+    - make clean
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  tags:
+    - nport
